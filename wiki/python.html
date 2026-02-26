@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python语言 Wiki - END 开源团队</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">END</span>
+                    <span class="logo-subtext">Open Source Community</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">首页</a></li>
+                <li><a href="../index.html#about">关于我们</a></li>
+                <li><a href="../index.html#team">团队成员</a></li>
+                <li><a href="../index.html#contact">联系我们</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub官网</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 内容区域 -->
+    <section class="wiki-section">
+        <div class="container">
+            <h1 class="wiki-title">Python语言 Wiki</h1>
+            <div class="wiki-content">
+                <div class="wiki-card">
+                    <h2>什么是Python语言？</h2>
+                    <p>Python是一种高级的、解释执行的编程语言，由Guido van Rossum于1991年发布。它以其简洁的语法和强大的生态系统而闻名，被广泛应用于各种领域的开发。</p>
+                </div>
+                
+                <div class="wiki-card">
+                    <h2>主要特点</h2>
+                    <ul>
+                        <li>简单易学：语法简洁，代码可读性高</li>
+                        <li>解释执行：不需要编译，直接运行</li>
+                        <li>面向对象：支持面向对象编程</li>
+                        <li>丰富的库：拥有大量的第三方库</li>
+                        <li>跨平台：可在不同操作系统上运行</li>
+                    </ul>
+                </div>
+                
+                <div class="wiki-card">
+                    <h2>应用领域</h2>
+                    <ul>
+                        <li>Web开发（Django、Flask）</li>
+                        <li>数据分析和科学计算</li>
+                        <li>人工智能和机器学习</li>
+                        <li>自动化脚本</li>
+                        <li>游戏开发</li>
+                    </ul>
+                </div>
+                
+                <div class="wiki-card">
+                    <h2>学习资源</h2>
+                    <ul>
+                        <li><a href="https://docs.python.org/zh-cn/3/" target="_blank">Python官方文档</a></li>
+                        <li><a href="https://www.w3schools.com/python/" target="_blank">W3Schools - Python教程</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/python-programming-language/" target="_blank">GeeksforGeeks - Python教程</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">END</span>
+                    <span class="logo-subtext">Open Source Community</span>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#home">首页</a>
+                    <a href="../index.html#about">关于我们</a>
+                    <a href="../index.html#team">团队成员</a>
+                    <a href="../index.html#contact">联系我们</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 END 开源团队. 保留所有权利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .wiki-section {
+            min-height: 100vh;
+            padding: 120px 0 60px;
+        }
+        
+        .wiki-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--primary-color);
+            text-shadow: 0 0 15px var(--primary-color);
+        }
+        
+        .wiki-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .wiki-card {
+            background-color: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 240, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .wiki-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 240, 255, 0.2);
+            border-color: var(--primary-color);
+        }
+        
+        .wiki-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .wiki-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .wiki-card ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+        
+        .wiki-card ul li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .wiki-card ul li::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .wiki-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .wiki-card a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+    </style>
+
+    <script src="../script.js"></script>
+</body>
+</html>

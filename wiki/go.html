@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go语言 Wiki - END 开源团队</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">END</span>
+                    <span class="logo-subtext">Open Source Community</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">首页</a></li>
+                <li><a href="../index.html#about">关于我们</a></li>
+                <li><a href="../index.html#team">团队成员</a></li>
+                <li><a href="../index.html#contact">联系我们</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub官网</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 内容区域 -->
+    <section class="wiki-section">
+        <div class="container">
+            <h1 class="wiki-title">Go语言 Wiki</h1>
+            <div class="wiki-content">
+                <div class="wiki-card">
+                    <h2>什么是Go语言？</h2>
+                    <p>Go（也称为Golang）是一种开源的编程语言，由Google的Robert Griesemer、Rob Pike和Ken Thompson于2007年开发，2009年正式发布。它是一种静态类型的编译型语言，设计用于构建简单、可靠和高效的软件。</p>
+                </div>
+                
+                <div class="wiki-card">
+                    <h2>主要特点</h2>
+                    <ul>
+                        <li>简单高效：语法简洁，编译速度快</li>
+                        <li>并发性：内置goroutine和channel支持并发编程</li>
+                        <li>垃圾回收：自动管理内存</li>
+                        <li>跨平台：可在不同操作系统上编译运行</li>
+                        <li>强类型：编译时检查类型错误</li>
+                    </ul>
+                </div>
+                
+                <div class="wiki-card">
+                    <h2>应用领域</h2>
+                    <ul>
+                        <li>后端服务</li>
+                        <li>云原生应用（如Kubernetes）</li>
+                        <li>微服务</li>
+                        <li>网络编程</li>
+                        <li>DevOps工具</li>
+                    </ul>
+                </div>
+                
+                <div class="wiki-card">
+                    <h2>学习资源</h2>
+                    <ul>
+                        <li><a href="https://golang.org/doc/" target="_blank">Go官方文档</a></li>
+                        <li><a href="https://gobyexample.com/" target="_blank">Go by Example</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/golang/" target="_blank">GeeksforGeeks - Go教程</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">END</span>
+                    <span class="logo-subtext">Open Source Community</span>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#home">首页</a>
+                    <a href="../index.html#about">关于我们</a>
+                    <a href="../index.html#team">团队成员</a>
+                    <a href="../index.html#contact">联系我们</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 END 开源团队. 保留所有权利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .wiki-section {
+            min-height: 100vh;
+            padding: 120px 0 60px;
+        }
+        
+        .wiki-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--primary-color);
+            text-shadow: 0 0 15px var(--primary-color);
+        }
+        
+        .wiki-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .wiki-card {
+            background-color: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 240, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .wiki-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 240, 255, 0.2);
+            border-color: var(--primary-color);
+        }
+        
+        .wiki-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .wiki-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .wiki-card ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+        
+        .wiki-card ul li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .wiki-card ul li::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .wiki-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .wiki-card a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+    </style>
+
+    <script src="../script.js"></script>
+</body>
+</html>

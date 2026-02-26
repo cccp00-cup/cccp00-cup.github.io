@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript语言 Wiki - END 开源团队</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <span class="logo-text">END</span>
+                    <span class="logo-subtext">Open Source Community</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">首页</a></li>
+                <li><a href="../index.html#about">关于我们</a></li>
+                <li><a href="../index.html#team">团队成员</a></li>
+                <li><a href="../index.html#contact">联系我们</a></li>
+                <li><a href="https://github.com" target="_blank">GitHub官网</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 内容区域 -->
+    <section class="wiki-section">
+        <div class="container">
+            <h1 class="wiki-title">JavaScript语言 Wiki</h1>
+            <div class="wiki-content">
+                <div class="wiki-card">
+                    <h2>什么是JavaScript？</h2>
+                    <p>JavaScript是一种高级的、解释执行的编程语言，主要用于网页开发。它是Web的三大核心技术之一（HTML、CSS和JavaScript），用于为网页添加交互性和动态效果。</p>
+                </div>
+                
+                <div class="wiki-card">
+                    <h2>主要特点</h2>
+                    <ul>
+                        <li>轻量级：语法简洁，易于学习</li>
+                        <li>解释执行：不需要编译，直接在浏览器中执行</li>
+                        <li>事件驱动：基于事件的编程模型</li>
+                        <li>面向对象：支持原型继承的面向对象编程</li>
+                        <li>跨平台：可在不同浏览器中运行</li>
+                    </ul>
+                </div>
+                
+                <div class="wiki-card">
+                    <h2>应用领域</h2>
+                    <ul>
+                        <li>前端开发：网页交互、动画效果</li>
+                        <li>后端开发：Node.js</li>
+                        <li>移动应用：React Native、Ionic</li>
+                        <li>桌面应用：Electron</li>
+                        <li>游戏开发：Phaser、Three.js</li>
+                    </ul>
+                </div>
+                
+                <div class="wiki-card">
+                    <h2>学习资源</h2>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank">MDN JavaScript文档</a></li>
+                        <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools - JavaScript教程</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/javascript/" target="_blank">GeeksforGeeks - JavaScript教程</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">END</span>
+                    <span class="logo-subtext">Open Source Community</span>
+                </div>
+                <div class="footer-links">
+                    <a href="../index.html#home">首页</a>
+                    <a href="../index.html#about">关于我们</a>
+                    <a href="../index.html#team">团队成员</a>
+                    <a href="../index.html#contact">联系我们</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 END 开源团队. 保留所有权利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .wiki-section {
+            min-height: 100vh;
+            padding: 120px 0 60px;
+        }
+        
+        .wiki-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--primary-color);
+            text-shadow: 0 0 15px var(--primary-color);
+        }
+        
+        .wiki-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .wiki-card {
+            background-color: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 240, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .wiki-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 240, 255, 0.2);
+            border-color: var(--primary-color);
+        }
+        
+        .wiki-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .wiki-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .wiki-card ul {
+            list-style: none;
+            color: var(--text-secondary);
+        }
+        
+        .wiki-card ul li {
+            padding: 8px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .wiki-card ul li::before {
+            content: '>';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .wiki-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .wiki-card a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+    </style>
+
+    <script src="../script.js"></script>
+</body>
+</html>
